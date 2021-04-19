@@ -1,24 +1,63 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+
 import './App.css';
 
 function App() {
+
+
+  const [light, changeLight] = useState({
+    lightRed:"red figure",
+    lightYellow:"yellow figure",
+    lightGreen:"green figure"
+  })
+
+  
+function changeRed(){
+  changeLight({
+    lightRed:"lightRed figure",
+    lightYellow:"yellow figure",
+    lightGreen:"green figure"
+
+    
+  })
+
+}
+
+function changeYellow(){
+  changeLight({
+    lightRed:"red figure",
+    lightYellow:"lightYellow figure",
+    lightGreen:"green figure"
+
+    
+  })
+
+}
+
+function changeGreen(){
+  changeLight({
+    lightRed:"red figure",
+    lightYellow:"yellow figure",
+    lightGreen:"lightGreen figure"
+
+    
+  })
+
+}
+
+
+  
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+<div className="content">
+  <div className="trafficLight">
+    <div className={light.lightRed} onClick={changeRed}></div>
+    <div className={light.lightYellow} onClick={changeYellow}></div>
+    <div className={light.lightGreen} onClick={changeGreen}></div>
+  </div>
+</div>
   );
 }
 
