@@ -2,7 +2,6 @@
   width: 300px;
   height: 300px;
   margin: 0 auto;
-  
 }
 
 .trafficLight{
@@ -11,55 +10,40 @@
   height: 220px;
   margin: 0 auto;
   margin-top: 40px;
-  background-color: black;
-  
- 
+  background-color: black; 
 }
 
 .figure{
-  
     width: 70px;
     height: 70px;
-    border: 1px solid red;
     margin: auto;
     border-radius: 50%;
     background-color: red;
-
-}
+  }
 
 .red{
-
 background-color: red;
-
 }
 
 .yellow{
-
 background-color: yellow;
-
 }
 
 .green{
- 
-background-color: green;
-
+ background-color: green;
 }
 
 .lightRed{
   background-color: red;
   box-shadow: #f8ffcc 0px 0px 50px 20px;
-
 }
+
 .lightYellow{
   background-color: yellow;
   box-shadow: #f8ffcc 0px 0px 50px 20px;
-  
 }
+
 .lightGreen{
   background-color: green;
   box-shadow: #f8ffcc 0px 0px 50px 20px;
-  
 }
-
-
-
